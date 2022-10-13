@@ -7,11 +7,15 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import { WishListItem } from './models/WishList'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  created() {
+    console.log(WishListItem)
   }
 }
 </script>
