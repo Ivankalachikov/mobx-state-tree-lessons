@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can add new items - patches 1`] = `
+[
+  {
+    "op": "add",
+    "path": "/items/0",
+    "value": {
+      "image": "",
+      "name": "Socks",
+      "price": 100,
+    },
+  },
+  {
+    "op": "replace",
+    "path": "/items/0/name",
+    "value": "Flowers",
+  },
+]
+`;
+
+exports[`can add new items - snapshots 1`] = `
+{
+  "items": [
+    {
+      "image": "",
+      "name": "Flowers",
+      "price": 100,
+    },
+  ],
+}
+`;
+
+exports[`can add new items - snapshots 2`] = `
+[
+  {
+    "items": [
+      {
+        "image": "",
+        "name": "Socks",
+        "price": 100,
+      },
+    ],
+  },
+  {
+    "items": [
+      {
+        "image": "",
+        "name": "Flowers",
+        "price": 100,
+      },
+    ],
+  },
+]
+`;
