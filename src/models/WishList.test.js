@@ -24,7 +24,7 @@ test('Can create a wishlist', () => {
 
 test('can add new items', () => {
   const list = WishList.create();
-  list.add({ name: 'Socks', price: 100 });
+  list.add(WishListItem.create({ name: 'Socks', price: 100 }));
   expect(list.items.length).toBe(1);
   expect(list.items[0].name).toBe('Socks');
   list.items[0].changeName('Flowers');
